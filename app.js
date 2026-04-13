@@ -57,7 +57,7 @@ const chatMessages = document.getElementById('chat-messages');
 const botResponses = [
     { keys: ["hello", "hi", "hey", "greetings"], response: "Hi there! How can I help you today?" },
     { keys: ["skills", "tech", "stack", "know", "programming"], response: "Glenmark is highly skilled in React Native, Laravel, MySQL, Python, Java, and modern UI/UX design (like this portfolio!)." },
-    { keys: ["projects", "build", "work", "portfolio"], response: "His main projects include RiceGuard AI (a disease detection system) and a smart Campus Lost & Found System." },
+    { keys: ["projects", "build", "work", "experience", "portfolio"], response: "Glenmark is currently a dedicated CS student focusing on building a strong project portfolio. While he hasn't started his professional career yet, his work like RiceGuard AI and the Lost & Found system demonstrates his proficiency." },
     { keys: ["education", "school", "university", "bisu", "degree", "graduate", "high school"], response: "Glenmark graduated from Guinsularan National HS and is currently pursuing his BS in Computer Science at Bohol Island State University (BISU)." },
     { keys: ["contact", "email", "phone", "reach", "hire"], response: "You can reach him at glenmark.r.sandigan@bisu.edu.com or via the 'Schedule a Call' link in the Contact section." },
     { keys: ["age", "how old", "birthday"], response: "Glenmark is 22 years old (born Jan 21, 2004) and is focusing heavily on software engineering and full-stack development." },
