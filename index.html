@@ -19,27 +19,24 @@
 
 <body>
     <div class="background-glow"></div>
+    <div class="ambient-blob" style="top: -10%; left: -10%;"></div>
+    <div class="ambient-blob" style="bottom: 10%; right: -10%;"></div>
 
-    <nav class="bento-nav glass">
+    <nav class="bento-nav">
         <div class="nav-logo">GLENMARK.</div>
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
             <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                <svg class="sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
                     <circle cx="12" cy="12" r="5"></circle>
                     <line x1="12" y1="1" x2="12" y2="3"></line>
                     <line x1="12" y1="21" x2="12" y2="23"></line>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                 </svg>
-                <svg class="moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                 </svg>
@@ -47,267 +44,252 @@
         </div>
     </nav>
 
-    <main class="container bento-grid">
-        <!-- Header Section (Span 2) -->
-        <header id="hero" class="bento-card header-card glass reveal stagger-1">
-            <div class="header-content">
-                <div class="header-img-container">
-                    <img src="profile.jpg" alt="Glenmark Sandigan" class="header-img">
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section hero">
+            <div class="hero-content reveal">
+                <span class="section-tag">Based in Bohol, Philippines</span>
+                <h1>Hi, I'm Glenmark.<span>I build things for the web.</span></h1>
+                <p class="hero-description">Aspiring Full-Stack Developer & BS Computer Science Student dedicated to creating user-centric digital solutions with modern aesthetics.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Start a Project</a>
+                    <a href="#projects" class="btn btn-secondary">View Work</a>
                 </div>
-                <div class="header-info">
-                    <h1>Glenmark Sandigan <span class="verified-icon">✓</span></h1>
-                    <p class="location">📍 P-7 Guinsularan, Duero, Bohol</p>
-                    <p class="role">Aspiring Full-Stack Developer | BS Computer Science Student | UI/UX Enthusiast</p>
-                    <div class="header-actions">
-                        <a href="https://calendly.com" class="btn btn-black">Schedule a Call</a>
-                        <a href="mailto:glenmark.r.sandigan@bisu.edu.com" class="btn btn-outline">Send Email</a>
-
-                        <div class="social-links">
-                            <a href="https://github.com/glenmarksandigan" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                                    <path
-                                        d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.699-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="profile-container">
+                    <div class="orbit-ring"></div>
+                    <div class="orbit-wrapper">
+                        <div class="orbit-badge badge-1">Fullstack Web</div>
+                        <div class="orbit-badge badge-2">UI/UX Enthusiast</div>
+                        <div class="orbit-badge badge-3">AI & ML</div>
+                    </div>
+                    <div class="profile-img-wrapper">
+                        <img src="profile.jpg" alt="Glenmark Sandigan">
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <!-- Columns Container -->
-        <div class="bento-columns">
-            <!-- Left Column -->
-            <div class="bento-column left">
-                <!-- About Me -->
-                <section id="about" class="bento-card about-card glass reveal stagger-2">
-                    <h2>About Me</h2>
-                    <div class="card-content">
-                        <p>I'm a BS Computer Science student at <strong>Bohol Island State University</strong>. I'm
-                            dedicated to creating user-centric digital solutions with a focus on efficiency and modern
-                            aesthetics.</p>
-                        <p>Currently, I'm looking for an internship where I can apply my academic foundation to
-                            real-world
-                            projects.</p>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="contact-layout">
+                <div class="reveal">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Driven by curiosity,<br>defined by code.</h2>
+                </div>
+                <div class="reveal" style="padding-top: 20px;">
+                    <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 1.1rem;">
+                        I'm currently pursuing my BS in Computer Science at **Bohol Island State University**. My journey in tech is fueled by a passion for solving complex problems through elegant, efficient code.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 32px;">
+                        From work immersion in San Antonio to professional training in Candijay, I've consistently sought ways to bridge the gap between academic theory and real-world application.
+                    </p>
+                    <div class="project-tags">
+                        <span>Problem Solver</span>
+                        <span>Rapid Learner</span>
+                        <span>Team Player</span>
                     </div>
-                </section>
-
-                <!-- Education -->
-                <section id="education" class="bento-card education-card glass reveal stagger-3">
-                    <h2>Education</h2>
-                    <div class="card-content">
-                        <div class="edu-item">
-                            <h3>BS Computer Science</h3>
-                            <p>Bohol Island State University | 2023 - Present</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Certifications -->
-                <section id="certifications" class="bento-card certs-card glass reveal stagger-4">
-                    <div class="card-header">
-                        <h2>Certifications</h2>
-                    </div>
-                    <div class="card-content">
-                        <p class="empty-state" style="opacity: 0.6; font-style: italic;">Currently pursuing new
-                            certifications...</p>
-                    </div>
-                </section>
-
-                <!-- Tech Stack -->
-                <section id="skills" class="bento-card tech-card glass reveal stagger-5">
-                    <div class="card-header">
-                        <h2>Tech Stack</h2>
-                    </div>
-                    <div class="card-content">
-                        <div class="tech-category">
-                            <h3>Frontend</h3>
-                            <div class="tech-tags">
-                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>React
-                                    Native</span>
-                            </div>
-                        </div>
-                        <div class="tech-category">
-                            <h3>Backend & DB</h3>
-                            <div class="tech-tags">
-                                <span>PHP</span><span>Laravel</span><span>Python</span><span>MySQL</span><span>PostgreSQL</span><span>Supabase</span><span>Prisma</span>
-                            </div>
-                        </div>
-                        <div class="tech-category">
-                            <h3>Domain & Tools</h3>
-                            <div class="tech-tags">
-                                <span>Machine Learning</span><span>Git</span><span>VS
-                                    Code</span><span>Figma</span><span>Android Studio</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Beyond the Screen -->
-                <section id="beyond" class="bento-card beyond-card glass reveal stagger-6">
-                    <h2>Beyond the Screen</h2>
-                    <p>I enjoy exploring new technologies and staying updated with the latest in the tech world. In my
-                        free time, I like to find some inspiration for my next projects.</p>
-                    <div class="beyond-grid">
-                        <div class="img-wrapper">
-                            <img src="beyond_tech.png" alt="Tech setup and deep focus workspace">
-                        </div>
-                        <div class="img-wrapper">
-                            <img src="beyond_inspire.png" alt="Abstract creative inspiration">
-                        </div>
-                    </div>
-                </section>
+                </div>
             </div>
+        </section>
 
-            <!-- Right Column -->
-            <div class="bento-column right">
-                <!-- Experience -->
-                <section id="experience" class="bento-card experience-card glass reveal stagger-2">
-                    <h2>Experience</h2>
-                    <div class="card-content">
-                        <p style="opacity: 0.8; line-height: 1.6;">I am currently focused on my studies and building a
-                            strong foundation through personal projects. I am actively seeking my first
-                            <strong>Internship</strong> or <strong>Junior</strong> opportunity to apply my skills in a
-                            professional environment.
-                        </p>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <span class="section-tag">Featured Work</span>
+            <h2 class="section-title">Projects I've built</h2>
+            
+            <div class="featured-projects">
+                <!-- Project 1 -->
+                <a href="https://recyglen.vercel.app/" target="_blank" class="project-card reveal">
+                    <div class="project-img">
+                        <img src="recyglen.png" alt="RecyGlen">
                     </div>
-                </section>
+                    <div class="project-detail">
+                        <h3>RecyGlen</h3>
+                        <p>A modern manhwa and manga reading platform focused on user experience.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>Supabase</span><span>Tailwind</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Project 2 -->
+                <a href="https://github.com/glenmarksandigan/rice" target="_blank" class="project-card reveal">
+                    <div class="project-img">
+                        <img src="riceguard.png" alt="RiceGuard AI">
+                    </div>
+                    <div class="project-detail">
+                        <h3>RiceGuard AI</h3>
+                        <p>AI-powered rice disease detection and management system.</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>ML</span><span>Flask</span>
+                        </div>
+                    </div>
+                </a>
 
-                <!-- Projects -->
-                <section id="projects" class="bento-card projects-card glass reveal stagger-3">
-                    <div class="card-header">
-                        <h2>Projects</h2>
-                        <a href="#" class="view-all">View All ></a>
+                <!-- Project 3 -->
+                <a href="https://github.com/glenmarksandigan/campus_lost_found" target="_blank" class="project-card reveal">
+                    <div class="project-img">
+                        <img src="image.png" alt="Foundit!">
                     </div>
-                    <div class="projects-mini-grid">
-                        <div class="project-mini">
-                            <img src="recyglen.png" alt="RecyGlen App">
-                            <div class="project-mini-info">
-                                <h3>RecyGlen</h3>
-                                <p>Modern manhwa and manga reading platform.</p>
-                                <a href="https://recyglen.vercel.app/" target="_blank" rel="noopener noreferrer"
-                                    style="color: var(--accent-primary);">Visit App ➔</a>
-                            </div>
-                        </div>
-                        <div class="project-mini">
-                            <img src="lakeside.png" alt="Lakeside Campsite Booking">
-                            <div class="project-mini-info">
-                                <h3>Lakeside Campsite System</h3>
-                                <p>Comprehensive lakeside campsite booking platform.</p>
-                                <a href="https://lakeside-campsite-booking-system.vercel.app/" target="_blank"
-                                    rel="noopener noreferrer" style="color: var(--accent-primary);">Visit Site ➔</a>
-                            </div>
-                        </div>
-                        <div class="project-mini">
-                            <img src="huling_gabi.jpg" alt="Huling Gabi">
-                            <div class="project-mini-info">
-                                <h3>Huling Gabi</h3>
-                                <p>Roblox Horror Game Experience.</p>
-                                <a href="https://www.roblox.com/games/102340703993487/Huling-Gabi" target="_blank"
-                                    rel="noopener noreferrer" style="color: var(--accent-primary);">Play on Roblox ➔</a>
-                            </div>
-                        </div>
-                        <div class="project-mini">
-                            <img src="foodpark.png" alt="Food Park MS">
-                            <div class="project-mini-info">
-                                <h3>Food Park MS</h3>
-                                <p>Management System for local food hubs.</p>
-                                <a href="https://github.com/glenmarksandigan/food-park-MS" target="_blank"
-                                    rel="noopener noreferrer" style="color: var(--accent-primary);">View on GitHub ➔</a>
-                            </div>
-                        </div>
-                        <div class="project-mini">
-                            <img src="image.png" alt="Foundit!">
-                            <div class="project-mini-info">
-                                <h3>Foundit!</h3>
-                                <p>Smart Lost & Found platform for BISU Candijay.</p>
-                                <a href="https://github.com/glenmarksandigan/campus_lost_found" target="_blank"
-                                    rel="noopener noreferrer" style="color: var(--accent-primary);">View on GitHub ➔</a>
-                            </div>
-                        </div>
-                        <div class="project-mini">
-                            <img src="riceguard.png" alt="RiceGuard AI">
-                            <div class="project-mini-info">
-                                <h3>RiceGuard AI</h3>
-                                <p>AI-powered rice disease detection and management.</p>
-                                <a href="https://github.com/glenmarksandigan/rice" target="_blank"
-                                    rel="noopener noreferrer" style="color: var(--accent-primary);">View on GitHub ➔</a>
-                            </div>
+                    <div class="project-detail">
+                        <h3>Foundit!</h3>
+                        <p>Smart Lost & Found platform for BISU Candijay campus.</p>
+                        <div class="project-tags">
+                            <span>PHP</span><span>MySQL</span><span>Bootstrap</span>
                         </div>
                     </div>
-                </section>
+                </a>
 
-                <!-- Recommendations -->
-                <section id="recommendations" class="bento-card recommendations-card glass reveal stagger-4">
-                    <h2>Endorsements</h2>
-                    <div class="rec-quote">
-                        <p>"Been with him for a year and he is remarkable. Outstanding problem solver and team player."
-                        </p>
-                        <span class="rec-author">— Peer Review</span>
+                <!-- Project 4 -->
+                <a href="https://www.roblox.com/games/102340703993487/Huling-Gabi" target="_blank" class="project-card reveal">
+                    <div class="project-img">
+                        <img src="huling_gabi.jpg" alt="Huling Gabi">
                     </div>
-                </section>
-
-                <!-- Gallery -->
-                <section id="gallery" class="bento-card gallery-card glass reveal stagger-5">
-                    <div class="card-header">
-                        <h2>Gallery</h2>
-                    </div>
-                    <div class="gallery-mini">
-                        <div class="img-wrapper">
-                            <img src="image copy.png" alt="Gallery Feature 1">
-                        </div>
-                        <div class="img-wrapper">
-                            <img src="image copy 2.png" alt="Gallery Feature 2">
+                    <div class="project-detail">
+                        <h3>Huling Gabi</h3>
+                        <p>A chilling Roblox horror experience with immersive atmosphere.</p>
+                        <div class="project-tags">
+                            <span>Roblox</span><span>Lua</span><span>Game Design</span>
                         </div>
                     </div>
-                </section>
+                </a>
 
-                <!-- CTA -->
-                <section id="contact" class="bento-card cta-card glass reveal stagger-6">
-                    <h2>Let's work together.</h2>
-                    <p style="color: var(--text-secondary); margin-bottom: 24px;">Available for freelance projects and
-                        internships.</p>
-                    <div class="cta-links">
-                        <div class="cta-link">
+                <!-- Project 5 -->
+                <a href="https://lakeside-campsite-booking-system.vercel.app/" target="_blank" class="project-card reveal">
+                    <div class="project-img">
+                        <img src="lakeside.png" alt="Lakeside Campsite">
+                    </div>
+                    <div class="project-detail">
+                        <h3>Lakeside Campsite</h3>
+                        <p>Comprehensive booking platform for lakeside campsite management.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>Supabase</span><span>Tailwind</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 6 -->
+                <a href="https://github.com/glenmarksandigan/food-park-MS" target="_blank" class="project-card reveal">
+                    <div class="project-img">
+                        <img src="foodpark.png" alt="Food Park MS">
+                    </div>
+                    <div class="project-detail">
+                        <h3>Food Park MS</h3>
+                        <p>Management system designed for local food hubs and park administration.</p>
+                        <div class="project-tags">
+                            <span>Laravel</span><span>MySQL</span><span>PHP</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <span class="section-tag">Technical Skills</span>
+            <h2 class="section-title">My tech toolbox</h2>
+            
+            <div class="toolbox-grid">
+                <!-- Frontend -->
+                <div class="tool-category reveal">
+                    <h3>Frontend</h3>
+                    <div class="tool-list">
+                        <div class="tool-item"><span>React / React Native</span><div class="tool-bar-bg"><div class="tool-bar-fill" style="width: 85%;"></div></div></div>
+                        <div class="tool-item"><span>JavaScript / TS</span><div class="tool-bar-bg"><div class="tool-bar-fill" style="width: 80%;"></div></div></div>
+                        <div class="tool-item"><span>Modern CSS / UI</span><div class="tool-bar-bg"><div class="tool-bar-fill" style="width: 90%;"></div></div></div>
+                    </div>
+                </div>
+                
+                <!-- Backend -->
+                <div class="tool-category reveal">
+                    <h3>Backend & DB</h3>
+                    <div class="tool-list">
+                        <div class="tool-item"><span>PHP / Laravel</span><div class="tool-bar-bg"><div class="tool-bar-fill" style="width: 75%;"></div></div></div>
+                        <div class="tool-item"><span>Python / Flask</span><div class="tool-bar-bg"><div class="tool-bar-fill" style="width: 70%;"></div></div></div>
+                        <div class="tool-item"><span>PostgreSQL / MySQL</span><div class="tool-bar-bg"><div class="tool-bar-fill" style="width: 80%;"></div></div></div>
+                    </div>
+                </div>
+                
+                <!-- Tools -->
+                <div class="tool-category reveal">
+                    <h3>Tools & domain</h3>
+                    <div class="tool-list">
+                        <div class="tool-item"><span>Machine Learning</span><div class="tool-bar-bg"><div class="tool-bar-fill" style="width: 65%;"></div></div></div>
+                        <div class="tool-item"><span>Git / VS Code</span><div class="tool-bar-bg"><div class="tool-bar-fill" style="width: 90%;"></div></div></div>
+                        <div class="tool-item"><span>Figma Design</span><div class="tool-bar-bg"><div class="tool-bar-fill" style="width: 85%;"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-layout">
+                <div class="reveal">
+                    <span class="section-tag">Get in touch</span>
+                    <h2 class="section-title">Let's work<br>together.</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 40px; max-width: 400px;">
+                        I'm currently available for internships and freelance projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                    </p>
+                    <div class="cta-links" style="align-items: flex-start;">
+                        <div class="cta-link" style="align-items: flex-start;">
                             <span class="label">EMAIL</span>
-                            <a href="mailto:glenmark.r.sandigan@bisu.edu.com"
-                                style="word-break: break-all;">glenmark.r.sandigan@bisu.edu.com</a>
+                            <a href="mailto:sandiganglenmark1@gmail.com">sandiganglenmark1@gmail.com</a>
                         </div>
-                        <div class="cta-link">
-                            <span class="label">LET'S TALK</span>
-                            <a href="https://calendly.com">Schedule a Call ➔</a>
+                        <div class="cta-link" style="align-items: flex-start; margin-top: 24px;">
+                            <span class="label">GITHUB</span>
+                            <a href="https://github.com/glenmarksandigan" target="_blank">@glenmarksandigan</a>
                         </div>
                     </div>
-                </section>
+                </div>
+                
+                <div class="reveal">
+                    <form id="contact-form" class="premium-form glass" style="padding: 40px; border-radius: 32px;">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="How can I help?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="form-status" class="form-status"></div>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
-    <footer class="bento-footer">
-        <p>© 2026 Glenmark Sandigan. Crafted with minimal elegance.</p>
+    <footer class="section" style="border-top: 1px solid var(--surface-border); text-align: center; color: var(--text-secondary); font-size: 0.9rem;">
+        <p>© 2026 Glenmark Sandigan. Built with passion & minimal design.</p>
     </footer>
 
+    <!-- Chatbot Container -->
     <div id="chatbot-container">
-        <div id="chat-window" class="glass">
+        <div id="chat-window" class="glass" style="border-radius: 24px;">
             <div class="chat-header">
                 <span style="font-family: var(--font-heading);">GlenBot 👋</span>
-                <span id="close-chat"
-                    style="cursor: pointer; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; transition: background 0.2s;">×</span>
+                <span id="close-chat" style="cursor: pointer;">×</span>
             </div>
             <div class="chat-messages" id="chat-messages">
                 <div class="msg bot-msg">Hi! I'm Glenmark's digital assistant. Ask me anything about him!</div>
             </div>
             <div class="chat-input">
-                <input type="text" id="chat-user-input" placeholder="Type a message...">
+                <input type="text" id="chat-user-input" placeholder="Ask a question...">
                 <button id="send-chat">Send</button>
             </div>
         </div>
         <div id="chat-toggle">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H5.17L4 17.17V4H20V16Z" />
-            </svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z"/></svg>
         </div>
     </div>
 
